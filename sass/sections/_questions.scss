@@ -1,0 +1,42 @@
+#ques{
+    padding: 80px 0 100px;
+    .container-fluid{
+        .container{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            column-gap: 50px;
+            .image{
+                width: 461px;
+            }
+            .news{
+                .top{
+                    position: relative;
+                    padding: 55px 170px 55px 0px;
+                    border-bottom: 1px solid rgba(0,0,0,.125);
+                    &:first-child{
+                        padding: 0px 150px 55px 0px;
+                    }
+                    &:last-child{
+                        border-color: white;
+                    }
+                    h3{
+                        cursor: pointer;
+                        display: inline;
+                    }
+                    
+                }
+                .icon{
+                    display: inline;
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: translate(0,-70%);
+                    span{
+                        color: $mainColor;
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
